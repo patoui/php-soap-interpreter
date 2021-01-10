@@ -7,15 +7,23 @@
         {
             "name": "Meng Tian",
             "email": "tianmeng94@hotmail.com"
+        },
+        {
+            "name": "Patrique Ouimet",
+            "email": "patrique.ouimet@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.4.0"
+        "php": "^7.3 || ^8.0",
+        "ext-soap": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.8"
+        "phpunit/phpunit": "9.*"
     },
     "autoload": {
-        "psr-4": {"Meng\\Soap\\": "src/"}
+        "psr-4": {
+            "Meng\\Soap\\": "src/",
+            "Tests\\": "tests/"
+        }
     }
 }

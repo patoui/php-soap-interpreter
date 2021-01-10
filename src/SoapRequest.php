@@ -2,11 +2,22 @@
 
 namespace Meng\Soap;
 
+/**
+ * Class SoapRequest
+ * @package Meng\Soap
+ */
 class SoapRequest
 {
+    /** @var string */
     private $endpoint;
+
+    /** @var string */
     private $soapAction;
+
+    /** @var string */
     private $soapVersion;
+
+    /** @var string */
     private $soapMessage;
 
     /**
@@ -15,7 +26,7 @@ class SoapRequest
      * @param string $soapVersion
      * @param string $soapMessage
      */
-    public function __construct($endpoint, $soapAction, $soapVersion, $soapMessage)
+    public function __construct(string $endpoint, string $soapAction, string $soapVersion, string $soapMessage)
     {
         $this->endpoint = $endpoint;
         $this->soapAction = $soapAction;
@@ -26,7 +37,7 @@ class SoapRequest
     /**
      * @return string
      */
-    public function getEndpoint()
+    public function getEndpoint(): string
     {
         return $this->endpoint;
     }
@@ -34,7 +45,7 @@ class SoapRequest
     /**
      * @return string
      */
-    public function getSoapAction()
+    public function getSoapAction(): string
     {
         return $this->soapAction;
     }
@@ -42,7 +53,7 @@ class SoapRequest
     /**
      * @return string
      */
-    public function getSoapVersion()
+    public function getSoapVersion(): string
     {
         return $this->soapVersion;
     }
@@ -50,7 +61,7 @@ class SoapRequest
     /**
      * @return string
      */
-    public function getSoapMessage()
+    public function getSoapMessage(): string
     {
         return $this->soapMessage;
     }
